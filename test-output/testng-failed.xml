@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.UtilsLayer.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestLayer.ContactPageTest">
+        <methods>
+          <include name="ValidateEmailIdIncontactPage"/>
+          <include name="setUp"/>
+          <include name="ValidateCreateNewUserInContactPage"/>
+          <include name="validateLoggedUserName"/>
+          <include name="tearDown"/>
+          <include name="ValidateFirstNameIncontactPage"/>
+          <include name="validateContactLink"/>
+          <include name="validateLoginFunctionality"/>
+          <include name="ValidateMiddleNameIncontactPage"/>
+          <include name="ValidateLastNameIncontactPage"/>
+        </methods>
+      </class> <!-- TestLayer.ContactPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
